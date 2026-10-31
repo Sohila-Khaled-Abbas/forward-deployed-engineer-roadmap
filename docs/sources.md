@@ -34,6 +34,7 @@ Reviewed on **2026-10-31**. Technical links are primary documentation and first-
 | [Forward Deployed Engineer role](https://job-boards.greenhouse.io/anthropic/jobs/5391016008) — Anthropic | Role reference | Example of customer-embedded AI delivery. Location and travel requirements vary; this is a role reference, not a remote-job recommendation. |
 | [Forward Deployed Software Engineer role](https://jobs.lever.co/palantir/7ea66860-ae93-4139-9388-b7284cb33f37) — Palantir | Role reference | Example of engineering across customer problems, data, applications, and deployment. Job listings can close. |
 | [Forward Deployed Engineer roadmap](https://roadmap.sh/forward-deployed-engineer) — roadmap.sh | Further reading | Visual inspiration and a broader community reference. Fieldnotes has an original curriculum and design and is not affiliated with roadmap.sh. |
+| [Sohila’s Python Learning Roadmap](https://sohila-khaled-abbas.github.io/python-learning-roadmap/) — Sohila Khaled Abbas | Interactive roadmap | A focused branch with Boot.dev chapters, ITI Arabic, CS50P practice, original exercises and data-tool projects. Use the diagnostic and exit checks, then return to the FDE application path. |
 
 ## Attribution
 

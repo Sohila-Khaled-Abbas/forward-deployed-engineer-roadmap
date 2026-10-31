@@ -64,7 +64,7 @@ Learn and practice:
 
 Move from useful scripts to code another engineer can maintain.
 
-**For Sohila:** Keep your Python and ETL experience. Focus on interfaces, packaging, exceptions, configuration, and small testable functions.
+**For Sohila:** Keep your Python and ETL experience. Focus on interfaces, packaging, exceptions, configuration, and small testable functions. If you need a deeper Python pass, follow the linked Python Learning Roadmap before returning to service and API work.
 
 Learn and practice:
 
@@ -78,7 +78,7 @@ Learn and practice:
 
 **Prerequisites:** Customer discovery
 
-**Sources:** [The Python Tutorial](https://docs.python.org/3/tutorial/) · [Get started with pytest](https://docs.pytest.org/en/stable/getting-started.html)
+**Sources:** [Sohila’s Python Learning Roadmap](https://sohila-khaled-abbas.github.io/python-learning-roadmap/) · [The Python Tutorial](https://docs.python.org/3/tutorial/) · [Get started with pytest](https://docs.pytest.org/en/stable/getting-started.html)
 
 ### HTTP & API integration
 

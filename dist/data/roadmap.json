@@ -6,146 +6,1421 @@
   "hoursPerWeek": 9,
   "intro": "Turn your data, BI, and automation foundation into applications customers can use, trust, and operate.",
   "resources": [
-    {"id":"python","title":"The Python Tutorial","publisher":"Python","type":"Documentation","url":"https://docs.python.org/3/tutorial/","note":"Refresh modules, exceptions, classes, and environments; skip syntax you can already demonstrate."},
-    {"id":"http","title":"Overview of HTTP","publisher":"MDN","type":"Documentation","url":"https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview","note":"Understand requests, responses, headers, status codes, and the browser/server boundary."},
-    {"id":"pytest","title":"Get started with pytest","publisher":"pytest","type":"Documentation","url":"https://docs.pytest.org/en/stable/getting-started.html","note":"Use fixtures, assertions, and failure cases to verify real service behavior."},
-    {"id":"fastapi","title":"FastAPI tutorial","publisher":"FastAPI","type":"Documentation","url":"https://fastapi.tiangolo.com/tutorial/","note":"Build a typed service with validation, dependencies, security, and database access."},
-    {"id":"apitest","title":"Testing a FastAPI application","publisher":"FastAPI","type":"Documentation","url":"https://fastapi.tiangolo.com/tutorial/testing/","note":"Test HTTP responses and error paths with TestClient and pytest."},
-    {"id":"postgres","title":"PostgreSQL tutorial","publisher":"PostgreSQL","type":"Documentation","url":"https://www.postgresql.org/docs/current/tutorial.html","note":"Extend your SQL into application transactions, constraints, and operational data access."},
-    {"id":"typescript","title":"The TypeScript handbook","publisher":"TypeScript","type":"Documentation","url":"https://www.typescriptlang.org/docs/handbook/intro.html","note":"Start with JavaScript fundamentals, then learn types, narrowing, and async API calls."},
-    {"id":"react","title":"React quick start","publisher":"React","type":"Documentation","url":"https://react.dev/learn","note":"Learn enough components, forms, state, and accessibility to build one useful customer screen."},
-    {"id":"n8n","title":"Enable queue mode","publisher":"n8n","type":"Documentation","url":"https://docs.n8n.io/deploy/host-n8n/configure-n8n/scaling/enable-queue-mode.md","note":"Map worker, Redis, database, and webhook responsibilities to your existing stack."},
-    {"id":"docker","title":"Docker Compose documentation","publisher":"Docker","type":"Documentation","url":"https://docs.docker.com/compose/","note":"Practice a reproducible service stack, health checks, volumes, and configuration."},
-    {"id":"otel","title":"Observability primer","publisher":"OpenTelemetry","type":"Documentation","url":"https://opentelemetry.io/docs/concepts/observability-primer/","note":"Connect logs, metrics, and traces to a real customer request and its outcome."},
-    {"id":"owasp","title":"Top 10 for LLM applications","publisher":"OWASP","type":"Security guide","url":"https://genai.owasp.org/llm-top-10/","note":"Review prompt injection, data disclosure, excessive agency, and resource consumption."},
-    {"id":"qdrant","title":"Qdrant documentation","publisher":"Qdrant","type":"Documentation","url":"https://qdrant.tech/documentation/","note":"Use metadata filtering, retrieval evaluation, and access boundaries in a small RAG project."},
-    {"id":"mcp","title":"What is MCP?","publisher":"Model Context Protocol","type":"Documentation","url":"https://modelcontextprotocol.io/docs/getting-started/intro","note":"Learn the client/server/tool boundary, then expose a single narrow read-only tool."},
-    {"id":"agents","title":"Building effective agents","publisher":"Anthropic","type":"Engineering guide","url":"https://www.anthropic.com/research/building-effective-agents","note":"Study the workflow-versus-agent distinction and simple composable patterns; implementation tooling has evolved since publication."},
-    {"id":"evals","title":"Demystifying evals for AI agents","publisher":"Anthropic","type":"Engineering guide","url":"https://www.anthropic.com/research/demystifying-evals-for-ai-agents","note":"Design tasks, graders, and regression cases before judging a pilot by its best demo."},
-    {"id":"azure","title":"Describe Azure architecture and services","publisher":"Microsoft Learn","type":"Learning path","url":"https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/","note":"Use one cloud to learn identity, networking, compute, and storage. A certification is optional."},
-    {"id":"pages","title":"Creating a GitHub Pages site","publisher":"GitHub","type":"Documentation","url":"https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site","note":"This roadmap is a static website. APIs, databases, and secret keys belong in a separate runtime."},
-    {"id":"role-anthropic","title":"Forward Deployed Engineer role","publisher":"Anthropic","type":"Role reference","url":"https://job-boards.greenhouse.io/anthropic/jobs/5391016008","note":"Example of customer-embedded AI delivery. Location and travel requirements vary; this is a role reference, not a remote-job recommendation."},
-    {"id":"role-palantir","title":"Forward Deployed Software Engineer role","publisher":"Palantir","type":"Role reference","url":"https://jobs.lever.co/palantir/7ea66860-ae93-4139-9388-b7284cb33f37","note":"Example of engineering across customer problems, data, applications, and deployment. Job listings can close."},
-    {"id":"inspiration","title":"Forward Deployed Engineer roadmap","publisher":"roadmap.sh","type":"Further reading","url":"https://roadmap.sh/forward-deployed-engineer","note":"Visual inspiration and a broader community reference. Fieldnotes has an original curriculum and design and is not affiliated with roadmap.sh."}
+    {
+      "id": "python",
+      "title": "The Python Tutorial",
+      "publisher": "Python",
+      "type": "Documentation",
+      "url": "https://docs.python.org/3/tutorial/",
+      "note": "Refresh modules, exceptions, classes, and environments; skip syntax you can already demonstrate."
+    },
+    {
+      "id": "http",
+      "title": "Overview of HTTP",
+      "publisher": "MDN",
+      "type": "Documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
+      "note": "Understand requests, responses, headers, status codes, and the browser/server boundary."
+    },
+    {
+      "id": "pytest",
+      "title": "Get started with pytest",
+      "publisher": "pytest",
+      "type": "Documentation",
+      "url": "https://docs.pytest.org/en/stable/getting-started.html",
+      "note": "Use fixtures, assertions, and failure cases to verify real service behavior."
+    },
+    {
+      "id": "fastapi",
+      "title": "FastAPI tutorial",
+      "publisher": "FastAPI",
+      "type": "Documentation",
+      "url": "https://fastapi.tiangolo.com/tutorial/",
+      "note": "Build a typed service with validation, dependencies, security, and database access."
+    },
+    {
+      "id": "apitest",
+      "title": "Testing a FastAPI application",
+      "publisher": "FastAPI",
+      "type": "Documentation",
+      "url": "https://fastapi.tiangolo.com/tutorial/testing/",
+      "note": "Test HTTP responses and error paths with TestClient and pytest."
+    },
+    {
+      "id": "postgres",
+      "title": "PostgreSQL tutorial",
+      "publisher": "PostgreSQL",
+      "type": "Documentation",
+      "url": "https://www.postgresql.org/docs/current/tutorial.html",
+      "note": "Extend your SQL into application transactions, constraints, and operational data access."
+    },
+    {
+      "id": "typescript",
+      "title": "The TypeScript handbook",
+      "publisher": "TypeScript",
+      "type": "Documentation",
+      "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+      "note": "Start with JavaScript fundamentals, then learn types, narrowing, and async API calls."
+    },
+    {
+      "id": "react",
+      "title": "React quick start",
+      "publisher": "React",
+      "type": "Documentation",
+      "url": "https://react.dev/learn",
+      "note": "Learn enough components, forms, state, and accessibility to build one useful customer screen."
+    },
+    {
+      "id": "n8n",
+      "title": "Enable queue mode",
+      "publisher": "n8n",
+      "type": "Documentation",
+      "url": "https://docs.n8n.io/deploy/host-n8n/configure-n8n/scaling/enable-queue-mode.md",
+      "note": "Map worker, Redis, database, and webhook responsibilities to your existing stack."
+    },
+    {
+      "id": "docker",
+      "title": "Docker Compose documentation",
+      "publisher": "Docker",
+      "type": "Documentation",
+      "url": "https://docs.docker.com/compose/",
+      "note": "Practice a reproducible service stack, health checks, volumes, and configuration."
+    },
+    {
+      "id": "otel",
+      "title": "Observability primer",
+      "publisher": "OpenTelemetry",
+      "type": "Documentation",
+      "url": "https://opentelemetry.io/docs/concepts/observability-primer/",
+      "note": "Connect logs, metrics, and traces to a real customer request and its outcome."
+    },
+    {
+      "id": "owasp",
+      "title": "Top 10 for LLM applications",
+      "publisher": "OWASP",
+      "type": "Security guide",
+      "url": "https://genai.owasp.org/llm-top-10/",
+      "note": "Review prompt injection, data disclosure, excessive agency, and resource consumption."
+    },
+    {
+      "id": "qdrant",
+      "title": "Qdrant documentation",
+      "publisher": "Qdrant",
+      "type": "Documentation",
+      "url": "https://qdrant.tech/documentation/",
+      "note": "Use metadata filtering, retrieval evaluation, and access boundaries in a small RAG project."
+    },
+    {
+      "id": "mcp",
+      "title": "What is MCP?",
+      "publisher": "Model Context Protocol",
+      "type": "Documentation",
+      "url": "https://modelcontextprotocol.io/docs/getting-started/intro",
+      "note": "Learn the client/server/tool boundary, then expose a single narrow read-only tool."
+    },
+    {
+      "id": "agents",
+      "title": "Building effective agents",
+      "publisher": "Anthropic",
+      "type": "Engineering guide",
+      "url": "https://www.anthropic.com/research/building-effective-agents",
+      "note": "Study the workflow-versus-agent distinction and simple composable patterns; implementation tooling has evolved since publication."
+    },
+    {
+      "id": "evals",
+      "title": "Demystifying evals for AI agents",
+      "publisher": "Anthropic",
+      "type": "Engineering guide",
+      "url": "https://www.anthropic.com/research/demystifying-evals-for-ai-agents",
+      "note": "Design tasks, graders, and regression cases before judging a pilot by its best demo."
+    },
+    {
+      "id": "azure",
+      "title": "Describe Azure architecture and services",
+      "publisher": "Microsoft Learn",
+      "type": "Learning path",
+      "url": "https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "note": "Use one cloud to learn identity, networking, compute, and storage. A certification is optional."
+    },
+    {
+      "id": "pages",
+      "title": "Creating a GitHub Pages site",
+      "publisher": "GitHub",
+      "type": "Documentation",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+      "note": "This roadmap is a static website. APIs, databases, and secret keys belong in a separate runtime."
+    },
+    {
+      "id": "role-anthropic",
+      "title": "Forward Deployed Engineer role",
+      "publisher": "Anthropic",
+      "type": "Role reference",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391016008",
+      "note": "Example of customer-embedded AI delivery. Location and travel requirements vary; this is a role reference, not a remote-job recommendation."
+    },
+    {
+      "id": "role-palantir",
+      "title": "Forward Deployed Software Engineer role",
+      "publisher": "Palantir",
+      "type": "Role reference",
+      "url": "https://jobs.lever.co/palantir/7ea66860-ae93-4139-9388-b7284cb33f37",
+      "note": "Example of engineering across customer problems, data, applications, and deployment. Job listings can close."
+    },
+    {
+      "id": "inspiration",
+      "title": "Forward Deployed Engineer roadmap",
+      "publisher": "roadmap.sh",
+      "type": "Further reading",
+      "url": "https://roadmap.sh/forward-deployed-engineer",
+      "note": "Visual inspiration and a broader community reference. Fieldnotes has an original curriculum and design and is not affiliated with roadmap.sh."
+    },
+    {
+      "id": "python-learning",
+      "title": "Sohila’s Python Learning Roadmap",
+      "publisher": "Sohila Khaled Abbas",
+      "type": "Interactive roadmap",
+      "url": "https://sohila-khaled-abbas.github.io/python-learning-roadmap/",
+      "note": "A focused branch with Boot.dev chapters, ITI Arabic, CS50P practice, original exercises and data-tool projects. Use the diagnostic and exit checks, then return to the FDE application path."
+    }
   ],
   "phases": [
     {
-      "id":"frame","number":"01","title":"Frame the problem","short":"Problem & foundations","weeks":"01–04","accent":"green","outcome":"A scoped customer problem, a reproducible data baseline, and a tested integration script.",
-      "topics":[
-        {"id":"discovery","title":"Customer discovery","label":"Start here","familiar":false,"hours":6,"summary":"Find the workflow that hurts before choosing a technology.","bridge":"Your KPI and dashboard work is a starting point for asking operational questions. Add direct user discovery and an explicit scope agreement.","learn":["Map one user's current workflow, workarounds, and decision points.","Separate the buyer, daily user, technical owner, and approver.","Write a measurable outcome, constraints, assumptions, and exclusions."],"artifact":"A one-page brief for a fictional Egyptian SME: problem, user, baseline, success metric, and a two-week pilot scope.","gate":"You can explain who has the problem, how it is handled today, and how the pilot would be accepted without naming a tool.","requires":[],"resources":["role-palantir","role-anthropic"]},
-        {"id":"baseline","title":"Data & KPI baseline","label":"Build on BI","familiar":true,"hours":6,"summary":"Turn a business question into an auditable measurement.","bridge":"Reuse Power BI, DAX, dimensional modeling, and your PixelFed data contracts. Familiarity is a starting advantage, not an automatic completed topic.","learn":["Define metric grain, population, refresh frequency, and ownership.","Record missingness, duplicates, lineage, and source limitations.","Keep observed values separate from synthetic fixtures and projected benefits."],"artifact":"A data contract and baseline table for creator activity or support workflow handling time.","gate":"A peer can reproduce the metric from the documented source; synthetic records and unknowns are clearly labeled.","requires":["discovery"],"resources":["postgres"]},
-        {"id":"python","title":"Python as a service skill","label":"Build on Python","familiar":true,"hours":6,"summary":"Move from useful scripts to code another engineer can maintain.","bridge":"Keep your Python and ETL experience. Focus on interfaces, packaging, exceptions, configuration, and small testable functions.","learn":["Use modules, type hints, logging, and a reproducible environment.","Separate I/O, transformation, and business rules.","Handle errors deliberately and keep secrets out of code."],"artifact":"A small installable or module-based ingestion utility with configuration and a repeatable example command.","gate":"A clean checkout can run the utility with a fixture; bad input produces an actionable error and no partial write.","requires":["discovery"],"resources":["python","pytest"]},
-        {"id":"http","title":"HTTP & API integration","label":"Strengthen","familiar":true,"hours":6,"summary":"Understand what actually happens across an integration boundary.","bridge":"Build on your networking labs and n8n HTTP Request workflows. Implement one integration directly in Python.","learn":["Explain methods, headers, status codes, pagination, and TLS at a practical level.","Set timeouts; distinguish retryable failures from invalid requests.","Handle authentication, rate limits, and idempotency expectations."],"artifact":"An API client against a local mock with pagination, timeout handling, and bounded retries.","gate":"Demonstrate a timeout, a 429, an invalid credential, and a successful paginated response without leaking credentials.","requires":["python"],"resources":["http","fastapi"]},
-        {"id":"sql","title":"SQL integration contracts","label":"Build on SQL","familiar":true,"hours":6,"summary":"Make database access correct, bounded, and predictable.","bridge":"Use your PostgreSQL and SQL Server background. Add the perspective of an application consuming your data.","learn":["Define keys, null semantics, and query result contracts.","Use parameterized queries, scoped permissions, and sensible indexes.","Inspect a query plan and bound result sizes."],"artifact":"A read-only query layer over synthetic PixelFed gold aggregates with freshness metadata.","gate":"A parameter cannot change SQL structure; missing data and empty results are handled explicitly.","requires":["baseline","python"],"resources":["postgres"]},
-        {"id":"testing","title":"Git, tests & review","label":"Engineering habit","familiar":false,"hours":6,"summary":"Make a change reviewable and prove its behavior.","bridge":"You already work with GitHub, PRs, and CI. Add meaningful tests around the integration boundaries you own.","learn":["Use focused branches, small commits, and a clear PR description.","Write fixtures and tests for success, invalid input, and dependency failure.","Document one debugging investigation and the evidence that resolved it."],"artifact":"A reviewed PR with a test suite for the API client and query layer.","gate":"Tests fail when a real contract is broken; the README reproduces both the happy path and a failure case.","requires":["http","sql"],"resources":["pytest","apitest"]}
+      "id": "frame",
+      "number": "01",
+      "title": "Frame the problem",
+      "short": "Problem & foundations",
+      "weeks": "01–04",
+      "accent": "green",
+      "outcome": "A scoped customer problem, a reproducible data baseline, and a tested integration script.",
+      "topics": [
+        {
+          "id": "discovery",
+          "title": "Customer discovery",
+          "label": "Start here",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Find the workflow that hurts before choosing a technology.",
+          "bridge": "Your KPI and dashboard work is a starting point for asking operational questions. Add direct user discovery and an explicit scope agreement.",
+          "learn": [
+            "Map one user's current workflow, workarounds, and decision points.",
+            "Separate the buyer, daily user, technical owner, and approver.",
+            "Write a measurable outcome, constraints, assumptions, and exclusions."
+          ],
+          "artifact": "A one-page brief for a fictional Egyptian SME: problem, user, baseline, success metric, and a two-week pilot scope.",
+          "gate": "You can explain who has the problem, how it is handled today, and how the pilot would be accepted without naming a tool.",
+          "requires": [],
+          "resources": [
+            "role-palantir",
+            "role-anthropic"
+          ]
+        },
+        {
+          "id": "baseline",
+          "title": "Data & KPI baseline",
+          "label": "Build on BI",
+          "familiar": true,
+          "hours": 6,
+          "summary": "Turn a business question into an auditable measurement.",
+          "bridge": "Reuse Power BI, DAX, dimensional modeling, and your PixelFed data contracts. Familiarity is a starting advantage, not an automatic completed topic.",
+          "learn": [
+            "Define metric grain, population, refresh frequency, and ownership.",
+            "Record missingness, duplicates, lineage, and source limitations.",
+            "Keep observed values separate from synthetic fixtures and projected benefits."
+          ],
+          "artifact": "A data contract and baseline table for creator activity or support workflow handling time.",
+          "gate": "A peer can reproduce the metric from the documented source; synthetic records and unknowns are clearly labeled.",
+          "requires": [
+            "discovery"
+          ],
+          "resources": [
+            "postgres"
+          ]
+        },
+        {
+          "id": "python",
+          "title": "Python as a service skill",
+          "label": "Build on Python",
+          "familiar": true,
+          "hours": 6,
+          "summary": "Move from useful scripts to code another engineer can maintain.",
+          "bridge": "Keep your Python and ETL experience. Focus on interfaces, packaging, exceptions, configuration, and small testable functions. If you need a deeper Python pass, follow the linked Python Learning Roadmap before returning to service and API work.",
+          "learn": [
+            "Use modules, type hints, logging, and a reproducible environment.",
+            "Separate I/O, transformation, and business rules.",
+            "Handle errors deliberately and keep secrets out of code."
+          ],
+          "artifact": "A small installable or module-based ingestion utility with configuration and a repeatable example command.",
+          "gate": "A clean checkout can run the utility with a fixture; bad input produces an actionable error and no partial write.",
+          "requires": [
+            "discovery"
+          ],
+          "resources": [
+            "python-learning",
+            "python",
+            "pytest"
+          ]
+        },
+        {
+          "id": "http",
+          "title": "HTTP & API integration",
+          "label": "Strengthen",
+          "familiar": true,
+          "hours": 6,
+          "summary": "Understand what actually happens across an integration boundary.",
+          "bridge": "Build on your networking labs and n8n HTTP Request workflows. Implement one integration directly in Python.",
+          "learn": [
+            "Explain methods, headers, status codes, pagination, and TLS at a practical level.",
+            "Set timeouts; distinguish retryable failures from invalid requests.",
+            "Handle authentication, rate limits, and idempotency expectations."
+          ],
+          "artifact": "An API client against a local mock with pagination, timeout handling, and bounded retries.",
+          "gate": "Demonstrate a timeout, a 429, an invalid credential, and a successful paginated response without leaking credentials.",
+          "requires": [
+            "python"
+          ],
+          "resources": [
+            "http",
+            "fastapi"
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "SQL integration contracts",
+          "label": "Build on SQL",
+          "familiar": true,
+          "hours": 6,
+          "summary": "Make database access correct, bounded, and predictable.",
+          "bridge": "Use your PostgreSQL and SQL Server background. Add the perspective of an application consuming your data.",
+          "learn": [
+            "Define keys, null semantics, and query result contracts.",
+            "Use parameterized queries, scoped permissions, and sensible indexes.",
+            "Inspect a query plan and bound result sizes."
+          ],
+          "artifact": "A read-only query layer over synthetic PixelFed gold aggregates with freshness metadata.",
+          "gate": "A parameter cannot change SQL structure; missing data and empty results are handled explicitly.",
+          "requires": [
+            "baseline",
+            "python"
+          ],
+          "resources": [
+            "postgres"
+          ]
+        },
+        {
+          "id": "testing",
+          "title": "Git, tests & review",
+          "label": "Engineering habit",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Make a change reviewable and prove its behavior.",
+          "bridge": "You already work with GitHub, PRs, and CI. Add meaningful tests around the integration boundaries you own.",
+          "learn": [
+            "Use focused branches, small commits, and a clear PR description.",
+            "Write fixtures and tests for success, invalid input, and dependency failure.",
+            "Document one debugging investigation and the evidence that resolved it."
+          ],
+          "artifact": "A reviewed PR with a test suite for the API client and query layer.",
+          "gate": "Tests fail when a real contract is broken; the README reproduces both the happy path and a failure case.",
+          "requires": [
+            "http",
+            "sql"
+          ],
+          "resources": [
+            "pytest",
+            "apitest"
+          ]
+        }
       ],
-      "weekly":[
-        {"focus":"Find one painful workflow","tasks":["Draft the discovery brief and list five questions for a user.","Define a baseline, source limitations, and success criteria."],"deliverable":"Problem brief + metric contract"},
-        {"focus":"Make the Python boundary clean","tasks":["Refactor one ingestion utility into small modules.","Use a fixture and document configuration and failures."],"deliverable":"Reproducible Python utility"},
-        {"focus":"Integrate API and database","tasks":["Build a bounded API client against a local mock.","Add a parameterized read-only SQL query and freshness check."],"deliverable":"Integration slice + failure log"},
-        {"focus":"Prove the foundations","tasks":["Test invalid input, missing data, timeout, and rate limiting.","Open a reviewable PR and record a three-minute walkthrough."],"deliverable":"Tested integration PR + stage review"}
+      "weekly": [
+        {
+          "focus": "Find one painful workflow",
+          "tasks": [
+            "Draft the discovery brief and list five questions for a user.",
+            "Define a baseline, source limitations, and success criteria."
+          ],
+          "deliverable": "Problem brief + metric contract"
+        },
+        {
+          "focus": "Make the Python boundary clean",
+          "tasks": [
+            "Refactor one ingestion utility into small modules.",
+            "Use a fixture and document configuration and failures."
+          ],
+          "deliverable": "Reproducible Python utility"
+        },
+        {
+          "focus": "Integrate API and database",
+          "tasks": [
+            "Build a bounded API client against a local mock.",
+            "Add a parameterized read-only SQL query and freshness check."
+          ],
+          "deliverable": "Integration slice + failure log"
+        },
+        {
+          "focus": "Prove the foundations",
+          "tasks": [
+            "Test invalid input, missing data, timeout, and rate limiting.",
+            "Open a reviewable PR and record a three-minute walkthrough."
+          ],
+          "deliverable": "Tested integration PR + stage review"
+        }
       ]
     },
     {
-      "id":"build","number":"02","title":"Ship a useful application","short":"API & application","weeks":"05–08","accent":"blue","outcome":"Project 01: a working operations console with a typed API, a small UI, and access checks.",
-      "topics":[
-        {"id":"fastapi","title":"Typed Python APIs","label":"Priority gap","familiar":false,"hours":6,"summary":"Expose a business capability through a clear, validated API.","bridge":"Wrap the logic you already understand in a service rather than rebuilding your analytics stack.","learn":["Build request/response models, validation, and consistent error responses.","Separate routes, business logic, and data access.","Test the API contract and document sample requests."],"artifact":"FastAPI endpoints for creator metrics, freshness, and data-quality summaries.","gate":"Valid, invalid, missing, and unauthorized requests have tested responses; the API never returns raw sensitive rows.","requires":["testing"],"resources":["fastapi","apitest"]},
-        {"id":"database","title":"Transactions & migrations","label":"Go deeper","familiar":false,"hours":6,"summary":"Own the lifecycle of application data, not just SELECT queries.","bridge":"Your data-modeling skills transfer well. Add constraints, atomic writes, schema migration, and connection management.","learn":["Model a small operational table with constraints.","Use transactions and a versioned migration approach.","Practice a failed write and a tested recovery path."],"artifact":"A synthetic issue-triage table with migration scripts and an atomic update test.","gate":"A failed multi-step operation leaves consistent state; a fresh database is reproducible from migrations.","requires":["sql","fastapi"],"resources":["postgres","fastapi"]},
-        {"id":"auth","title":"Identity & permissions","label":"Core delivery","familiar":false,"hours":6,"summary":"Decide who can see or change each resource.","bridge":"Use a small role model before enterprise SSO. Authentication and authorization are separate design decisions.","learn":["Distinguish identity verification from resource authorization.","Enforce roles and tenant boundaries on the server.","Understand OAuth/OIDC concepts and use established identity tooling."],"artifact":"A viewer/operator permission matrix and API tests for denied access.","gate":"Changing a resource ID cannot expose another tenant's data; expired or absent credentials are rejected.","requires":["fastapi","database"],"resources":["fastapi","owasp"]},
-        {"id":"typescript","title":"JavaScript → TypeScript","label":"Priority gap","familiar":false,"hours":6,"summary":"Read and write the browser side of a customer solution.","bridge":"Transfer your Python problem-solving habits. Spend time on JavaScript semantics before adding TypeScript types.","learn":["Practice arrays, objects, modules, promises, and async/await.","Type API payloads and narrow nullable/error states.","Explain that compile-time types do not validate untrusted network data."],"artifact":"A typed API client that represents success, empty, loading, and error states.","gate":"You can trace a button click through a network request to a rendered result and diagnose a failed call.","requires":["http"],"resources":["typescript","http"]},
-        {"id":"frontend","title":"One useful customer UI","label":"Build to learn","familiar":false,"hours":6,"summary":"Build a screen that helps a user make a decision.","bridge":"Apply your Power BI UX instincts to React components, forms, and application state.","learn":["Use basic components, state, forms, and accessible labels.","Design loading, empty, error, and retry states.","Add filters and a detail view with clear data freshness."],"artifact":"A small creator-operations console with filters and an issue detail screen.","gate":"A user can complete the intended task with a keyboard and recover from an API failure.","requires":["typescript","fastapi"],"resources":["react","typescript"]},
-        {"id":"slice","title":"Deliver a vertical slice","label":"Project 01 gate","familiar":false,"hours":6,"summary":"Connect the user's action to data, service behavior, and a visible result.","bridge":"Extend PixelFed into a product surface. Keep its social-content scope; do not invent sales or ROAS metrics.","learn":["Trace a user action across UI, API, and database.","Check data freshness and permissions at integration boundaries.","Write a short demo script and collect structured feedback."],"artifact":"Project 01: PixelFed Operations Console, with setup instructions and one complete user journey.","gate":"A clean checkout supports a working demo and an access-denied demo; limitations and synthetic data are disclosed.","requires":["auth","frontend"],"resources":["apitest","react"]}
+      "id": "build",
+      "number": "02",
+      "title": "Ship a useful application",
+      "short": "API & application",
+      "weeks": "05–08",
+      "accent": "blue",
+      "outcome": "Project 01: a working operations console with a typed API, a small UI, and access checks.",
+      "topics": [
+        {
+          "id": "fastapi",
+          "title": "Typed Python APIs",
+          "label": "Priority gap",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Expose a business capability through a clear, validated API.",
+          "bridge": "Wrap the logic you already understand in a service rather than rebuilding your analytics stack.",
+          "learn": [
+            "Build request/response models, validation, and consistent error responses.",
+            "Separate routes, business logic, and data access.",
+            "Test the API contract and document sample requests."
+          ],
+          "artifact": "FastAPI endpoints for creator metrics, freshness, and data-quality summaries.",
+          "gate": "Valid, invalid, missing, and unauthorized requests have tested responses; the API never returns raw sensitive rows.",
+          "requires": [
+            "testing"
+          ],
+          "resources": [
+            "fastapi",
+            "apitest"
+          ]
+        },
+        {
+          "id": "database",
+          "title": "Transactions & migrations",
+          "label": "Go deeper",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Own the lifecycle of application data, not just SELECT queries.",
+          "bridge": "Your data-modeling skills transfer well. Add constraints, atomic writes, schema migration, and connection management.",
+          "learn": [
+            "Model a small operational table with constraints.",
+            "Use transactions and a versioned migration approach.",
+            "Practice a failed write and a tested recovery path."
+          ],
+          "artifact": "A synthetic issue-triage table with migration scripts and an atomic update test.",
+          "gate": "A failed multi-step operation leaves consistent state; a fresh database is reproducible from migrations.",
+          "requires": [
+            "sql",
+            "fastapi"
+          ],
+          "resources": [
+            "postgres",
+            "fastapi"
+          ]
+        },
+        {
+          "id": "auth",
+          "title": "Identity & permissions",
+          "label": "Core delivery",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Decide who can see or change each resource.",
+          "bridge": "Use a small role model before enterprise SSO. Authentication and authorization are separate design decisions.",
+          "learn": [
+            "Distinguish identity verification from resource authorization.",
+            "Enforce roles and tenant boundaries on the server.",
+            "Understand OAuth/OIDC concepts and use established identity tooling."
+          ],
+          "artifact": "A viewer/operator permission matrix and API tests for denied access.",
+          "gate": "Changing a resource ID cannot expose another tenant's data; expired or absent credentials are rejected.",
+          "requires": [
+            "fastapi",
+            "database"
+          ],
+          "resources": [
+            "fastapi",
+            "owasp"
+          ]
+        },
+        {
+          "id": "typescript",
+          "title": "JavaScript → TypeScript",
+          "label": "Priority gap",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Read and write the browser side of a customer solution.",
+          "bridge": "Transfer your Python problem-solving habits. Spend time on JavaScript semantics before adding TypeScript types.",
+          "learn": [
+            "Practice arrays, objects, modules, promises, and async/await.",
+            "Type API payloads and narrow nullable/error states.",
+            "Explain that compile-time types do not validate untrusted network data."
+          ],
+          "artifact": "A typed API client that represents success, empty, loading, and error states.",
+          "gate": "You can trace a button click through a network request to a rendered result and diagnose a failed call.",
+          "requires": [
+            "http"
+          ],
+          "resources": [
+            "typescript",
+            "http"
+          ]
+        },
+        {
+          "id": "frontend",
+          "title": "One useful customer UI",
+          "label": "Build to learn",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Build a screen that helps a user make a decision.",
+          "bridge": "Apply your Power BI UX instincts to React components, forms, and application state.",
+          "learn": [
+            "Use basic components, state, forms, and accessible labels.",
+            "Design loading, empty, error, and retry states.",
+            "Add filters and a detail view with clear data freshness."
+          ],
+          "artifact": "A small creator-operations console with filters and an issue detail screen.",
+          "gate": "A user can complete the intended task with a keyboard and recover from an API failure.",
+          "requires": [
+            "typescript",
+            "fastapi"
+          ],
+          "resources": [
+            "react",
+            "typescript"
+          ]
+        },
+        {
+          "id": "slice",
+          "title": "Deliver a vertical slice",
+          "label": "Project 01 gate",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Connect the user's action to data, service behavior, and a visible result.",
+          "bridge": "Extend PixelFed into a product surface. Keep its social-content scope; do not invent sales or ROAS metrics.",
+          "learn": [
+            "Trace a user action across UI, API, and database.",
+            "Check data freshness and permissions at integration boundaries.",
+            "Write a short demo script and collect structured feedback."
+          ],
+          "artifact": "Project 01: PixelFed Operations Console, with setup instructions and one complete user journey.",
+          "gate": "A clean checkout supports a working demo and an access-denied demo; limitations and synthetic data are disclosed.",
+          "requires": [
+            "auth",
+            "frontend"
+          ],
+          "resources": [
+            "apitest",
+            "react"
+          ]
+        }
       ],
-      "weekly":[
-        {"focus":"Put a contract around the data","tasks":["Build and test the first FastAPI endpoints.","Add migrations and one atomic operational update."],"deliverable":"Typed API + database lifecycle"},
-        {"focus":"Protect resources and learn the browser","tasks":["Test viewer/operator and cross-tenant denial cases.","Practice JavaScript async calls and type the API payload."],"deliverable":"Permission matrix + typed client"},
-        {"focus":"Build the smallest useful screen","tasks":["Create the React filters, metrics view, and detail screen.","Cover loading, empty, stale-data, and error states."],"deliverable":"Usable operations UI"},
-        {"focus":"Demo one complete outcome","tasks":["Connect UI, API, and database and test the full journey.","Record Project 01 and ask for feedback against the brief."],"deliverable":"Operations Console + project review"}
+      "weekly": [
+        {
+          "focus": "Put a contract around the data",
+          "tasks": [
+            "Build and test the first FastAPI endpoints.",
+            "Add migrations and one atomic operational update."
+          ],
+          "deliverable": "Typed API + database lifecycle"
+        },
+        {
+          "focus": "Protect resources and learn the browser",
+          "tasks": [
+            "Test viewer/operator and cross-tenant denial cases.",
+            "Practice JavaScript async calls and type the API payload."
+          ],
+          "deliverable": "Permission matrix + typed client"
+        },
+        {
+          "focus": "Build the smallest useful screen",
+          "tasks": [
+            "Create the React filters, metrics view, and detail screen.",
+            "Cover loading, empty, stale-data, and error states."
+          ],
+          "deliverable": "Usable operations UI"
+        },
+        {
+          "focus": "Demo one complete outcome",
+          "tasks": [
+            "Connect UI, API, and database and test the full journey.",
+            "Record Project 01 and ask for feedback against the brief."
+          ],
+          "deliverable": "Operations Console + project review"
+        }
       ]
     },
     {
-      "id":"ai","number":"03","title":"Add grounded AI","short":"AI & integrations","weeks":"09–12","accent":"purple","outcome":"A workflow support copilot with cited answers, scoped tools, and a small repeatable evaluation set.",
-      "topics":[
-        {"id":"llm","title":"LLM application basics","label":"Build on n8n","familiar":true,"hours":6,"summary":"Use a model as a fallible component with an explicit contract.","bridge":"You have n8n AI Agent, structured output, and sentiment workflows. Add direct SDK calls and controlled experiments.","learn":["Explain context, tokens, sampling, and structured output.","Validate outputs and handle rate limits, timeouts, and refusals.","Compare a deterministic solution with an LLM baseline."],"artifact":"A small support-ticket classifier with a labeled fixture set and a non-LLM baseline.","gate":"Malformed output is rejected; the same test cases compare quality, latency, and estimated token cost.","requires":["slice"],"resources":["agents","evals"]},
-        {"id":"retrieval","title":"RAG with evidence","label":"Build on Qdrant","familiar":true,"hours":6,"summary":"Retrieve authorized evidence and say when it is insufficient.","bridge":"Reuse Qdrant from your stack. Start with a small, sanitized set of workflow runbooks, including Arabic and English examples.","learn":["Chunk documents and preserve source IDs, versions, and metadata.","Compare retrieval against a keyword baseline.","Filter by access scope and return citations or an explicit no-answer."],"artifact":"A runbook assistant over sanitized n8n documentation with citations and tenant filters.","gate":"Known answers cite the right source; missing evidence and unauthorized documents never produce a fabricated confident answer.","requires":["llm","auth"],"resources":["qdrant","owasp"]},
-        {"id":"evals","title":"Evaluate before you trust","label":"Priority gap","familiar":false,"hours":6,"summary":"Measure failure modes, not just the best-looking response.","bridge":"Bring your analyst mindset to AI quality. Treat the evaluation dataset and scoring rules as versioned assets.","learn":["Create at least 30 learning cases: routine, ambiguous, missing-evidence, Arabic/English, and adversarial.","Separate retrieval, task success, citation quality, and permission failures.","Record model/prompt versions and measure latency and cost per successful task."],"artifact":"A versioned eval report with a baseline, failure taxonomy, and a proposed release threshold.","gate":"You can reproduce the score and explain the worst failures. A suggested learning target is 80% rubric pass with zero access leaks; negotiate real pilot thresholds with users.","requires":["llm","retrieval"],"resources":["evals","owasp"]},
-        {"id":"tools","title":"Tools with boundaries","label":"Core delivery","familiar":false,"hours":6,"summary":"Give an assistant only the capabilities the task needs.","bridge":"Your automation experience helps with tool schemas and side effects. Start read-only, then simulate an approval-gated action.","learn":["Define narrow schemas, resource scopes, and server-side validation.","Distinguish model suggestions from authorized execution.","Bound calls and execution time; use idempotency keys for writes."],"artifact":"Read-only execution-status tools plus a mock proposed retry requiring human approval.","gate":"Prompt injection cannot broaden permissions; a repeated approval cannot execute the same side effect twice.","requires":["evals","auth"],"resources":["agents","owasp"]},
-        {"id":"orchestration","title":"Reliable workflow design","label":"Build on n8n","familiar":true,"hours":6,"summary":"Choose a workflow or an agent based on uncertainty and risk.","bridge":"Use your n8n queue-mode project as a lab, without assuming its production readiness from the repository description.","learn":["Model deterministic paths, retries, dead-letter handling, and human review.","Carry correlation IDs across API, n8n, and database.","Handle duplicate webhooks and partially completed jobs."],"artifact":"A support-triage workflow with explicit states and a replay-safe failure path.","gate":"A duplicate webhook and a crashed dependency do not cause duplicate side effects; failed jobs are visible and recoverable.","requires":["tools","database"],"resources":["n8n","agents"]},
-        {"id":"mcp","title":"One narrow MCP server","label":"Connect systems","familiar":false,"hours":6,"summary":"Understand a standard tool boundary by implementing a tiny one.","bridge":"Expose an existing read-only capability rather than adding another framework or agent swarm.","learn":["Explain host, client, server, tools, and resources.","Validate arguments and scope credentials per tool.","Version the tool contract and report structured errors."],"artifact":"One read-only workflow-status tool, plus a diagram of its trust boundary.","gate":"A client can discover and call the tool; invalid arguments and out-of-scope resources are rejected by the server.","requires":["tools","orchestration"],"resources":["mcp","owasp"]}
+      "id": "ai",
+      "number": "03",
+      "title": "Add grounded AI",
+      "short": "AI & integrations",
+      "weeks": "09–12",
+      "accent": "purple",
+      "outcome": "A workflow support copilot with cited answers, scoped tools, and a small repeatable evaluation set.",
+      "topics": [
+        {
+          "id": "llm",
+          "title": "LLM application basics",
+          "label": "Build on n8n",
+          "familiar": true,
+          "hours": 6,
+          "summary": "Use a model as a fallible component with an explicit contract.",
+          "bridge": "You have n8n AI Agent, structured output, and sentiment workflows. Add direct SDK calls and controlled experiments.",
+          "learn": [
+            "Explain context, tokens, sampling, and structured output.",
+            "Validate outputs and handle rate limits, timeouts, and refusals.",
+            "Compare a deterministic solution with an LLM baseline."
+          ],
+          "artifact": "A small support-ticket classifier with a labeled fixture set and a non-LLM baseline.",
+          "gate": "Malformed output is rejected; the same test cases compare quality, latency, and estimated token cost.",
+          "requires": [
+            "slice"
+          ],
+          "resources": [
+            "agents",
+            "evals"
+          ]
+        },
+        {
+          "id": "retrieval",
+          "title": "RAG with evidence",
+          "label": "Build on Qdrant",
+          "familiar": true,
+          "hours": 6,
+          "summary": "Retrieve authorized evidence and say when it is insufficient.",
+          "bridge": "Reuse Qdrant from your stack. Start with a small, sanitized set of workflow runbooks, including Arabic and English examples.",
+          "learn": [
+            "Chunk documents and preserve source IDs, versions, and metadata.",
+            "Compare retrieval against a keyword baseline.",
+            "Filter by access scope and return citations or an explicit no-answer."
+          ],
+          "artifact": "A runbook assistant over sanitized n8n documentation with citations and tenant filters.",
+          "gate": "Known answers cite the right source; missing evidence and unauthorized documents never produce a fabricated confident answer.",
+          "requires": [
+            "llm",
+            "auth"
+          ],
+          "resources": [
+            "qdrant",
+            "owasp"
+          ]
+        },
+        {
+          "id": "evals",
+          "title": "Evaluate before you trust",
+          "label": "Priority gap",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Measure failure modes, not just the best-looking response.",
+          "bridge": "Bring your analyst mindset to AI quality. Treat the evaluation dataset and scoring rules as versioned assets.",
+          "learn": [
+            "Create at least 30 learning cases: routine, ambiguous, missing-evidence, Arabic/English, and adversarial.",
+            "Separate retrieval, task success, citation quality, and permission failures.",
+            "Record model/prompt versions and measure latency and cost per successful task."
+          ],
+          "artifact": "A versioned eval report with a baseline, failure taxonomy, and a proposed release threshold.",
+          "gate": "You can reproduce the score and explain the worst failures. A suggested learning target is 80% rubric pass with zero access leaks; negotiate real pilot thresholds with users.",
+          "requires": [
+            "llm",
+            "retrieval"
+          ],
+          "resources": [
+            "evals",
+            "owasp"
+          ]
+        },
+        {
+          "id": "tools",
+          "title": "Tools with boundaries",
+          "label": "Core delivery",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Give an assistant only the capabilities the task needs.",
+          "bridge": "Your automation experience helps with tool schemas and side effects. Start read-only, then simulate an approval-gated action.",
+          "learn": [
+            "Define narrow schemas, resource scopes, and server-side validation.",
+            "Distinguish model suggestions from authorized execution.",
+            "Bound calls and execution time; use idempotency keys for writes."
+          ],
+          "artifact": "Read-only execution-status tools plus a mock proposed retry requiring human approval.",
+          "gate": "Prompt injection cannot broaden permissions; a repeated approval cannot execute the same side effect twice.",
+          "requires": [
+            "evals",
+            "auth"
+          ],
+          "resources": [
+            "agents",
+            "owasp"
+          ]
+        },
+        {
+          "id": "orchestration",
+          "title": "Reliable workflow design",
+          "label": "Build on n8n",
+          "familiar": true,
+          "hours": 6,
+          "summary": "Choose a workflow or an agent based on uncertainty and risk.",
+          "bridge": "Use your n8n queue-mode project as a lab, without assuming its production readiness from the repository description.",
+          "learn": [
+            "Model deterministic paths, retries, dead-letter handling, and human review.",
+            "Carry correlation IDs across API, n8n, and database.",
+            "Handle duplicate webhooks and partially completed jobs."
+          ],
+          "artifact": "A support-triage workflow with explicit states and a replay-safe failure path.",
+          "gate": "A duplicate webhook and a crashed dependency do not cause duplicate side effects; failed jobs are visible and recoverable.",
+          "requires": [
+            "tools",
+            "database"
+          ],
+          "resources": [
+            "n8n",
+            "agents"
+          ]
+        },
+        {
+          "id": "mcp",
+          "title": "One narrow MCP server",
+          "label": "Connect systems",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Understand a standard tool boundary by implementing a tiny one.",
+          "bridge": "Expose an existing read-only capability rather than adding another framework or agent swarm.",
+          "learn": [
+            "Explain host, client, server, tools, and resources.",
+            "Validate arguments and scope credentials per tool.",
+            "Version the tool contract and report structured errors."
+          ],
+          "artifact": "One read-only workflow-status tool, plus a diagram of its trust boundary.",
+          "gate": "A client can discover and call the tool; invalid arguments and out-of-scope resources are rejected by the server.",
+          "requires": [
+            "tools",
+            "orchestration"
+          ],
+          "resources": [
+            "mcp",
+            "owasp"
+          ]
+        }
       ],
-      "weekly":[
-        {"focus":"Establish an AI baseline","tasks":["Compare deterministic and model-based classification.","Record output validation, latency, and token estimates."],"deliverable":"Baseline report + model adapter"},
-        {"focus":"Retrieve with sources","tasks":["Ingest sanitized runbooks with version and access metadata.","Test citations, missing evidence, and Arabic/English queries."],"deliverable":"Cited retrieval prototype"},
-        {"focus":"Measure and constrain","tasks":["Build the 30-case learning eval set and inspect failures.","Add narrow tools and a mock approval-gated action."],"deliverable":"Eval report + bounded tool contract"},
-        {"focus":"Connect the support workflow","tasks":["Handle retries, duplicate events, and explicit states in n8n.","Expose one read-only MCP tool and document the trust boundary."],"deliverable":"Support Copilot prototype + stage review"}
+      "weekly": [
+        {
+          "focus": "Establish an AI baseline",
+          "tasks": [
+            "Compare deterministic and model-based classification.",
+            "Record output validation, latency, and token estimates."
+          ],
+          "deliverable": "Baseline report + model adapter"
+        },
+        {
+          "focus": "Retrieve with sources",
+          "tasks": [
+            "Ingest sanitized runbooks with version and access metadata.",
+            "Test citations, missing evidence, and Arabic/English queries."
+          ],
+          "deliverable": "Cited retrieval prototype"
+        },
+        {
+          "focus": "Measure and constrain",
+          "tasks": [
+            "Build the 30-case learning eval set and inspect failures.",
+            "Add narrow tools and a mock approval-gated action."
+          ],
+          "deliverable": "Eval report + bounded tool contract"
+        },
+        {
+          "focus": "Connect the support workflow",
+          "tasks": [
+            "Handle retries, duplicate events, and explicit states in n8n.",
+            "Expose one read-only MCP tool and document the trust boundary."
+          ],
+          "deliverable": "Support Copilot prototype + stage review"
+        }
       ]
     },
     {
-      "id":"operate","number":"04","title":"Make it dependable","short":"Deploy & operate","weeks":"13–16","accent":"orange","outcome":"Project 02: a deployable Support Copilot with telemetry, a recovery drill, and release checks.",
-      "topics":[
-        {"id":"docker","title":"Reproducible containers","label":"Build on Docker","familiar":true,"hours":6,"summary":"Make local success reproducible on a clean machine.","bridge":"Your Docker, Redis, PostgreSQL, and n8n troubleshooting gives you useful context. Practice with a small isolated lab stack.","learn":["Pin compatible versions, configure health checks, and separate config from secrets.","Understand networks, named volumes, and resource limits.","Verify backup and restore rather than only creating backup files."],"artifact":"A minimal Compose stack for API, database, and copilot dependencies, with a restore drill.","gate":"A clean startup works; a recreated container preserves intended data; a backup restores into a separate test instance.","requires":["mcp"],"resources":["docker","n8n"]},
-        {"id":"cloud","title":"One cloud, end to end","label":"Priority gap","familiar":false,"hours":6,"summary":"Deploy one service and understand the infrastructure it depends on.","bridge":"Azure is a reasonable learning default beside your Microsoft BI tools. Choose one cloud; do not learn three at once.","learn":["Map identity, compute, networking, storage, and managed database.","Configure TLS, environment separation, and a budget alert.","Compare a managed service with self-hosting using explicit tradeoffs."],"artifact":"A deployment diagram and a small pilot environment, or a reproducible local simulation if a paid account is unavailable.","gate":"You can explain the request path, service identity, secret source, and shutdown procedure. Record any untested cloud assumptions.","requires":["docker","auth"],"resources":["azure","docker"]},
-        {"id":"security","title":"Security & data boundaries","label":"Non-negotiable","familiar":false,"hours":6,"summary":"Treat data movement and tool permissions as design decisions.","bridge":"Extend your local-network and access-control work into application and AI threat modeling.","learn":["Map sensitive data, entry points, credentials, and tenant boundaries.","Apply least privilege, output validation, log redaction, and retention limits.","Test prompt injection and unauthorized access; document residual risks."],"artifact":"A small threat model and abuse-case test report for Project 02.","gate":"No secret enters a client bundle or committed fixture; denied requests remain denied across API, retrieval, and tools.","requires":["tools","cloud"],"resources":["owasp","mcp"]},
-        {"id":"telemetry","title":"Logs, metrics & traces","label":"See the system","familiar":false,"hours":6,"summary":"Explain what happened to one user request across the stack.","bridge":"Use your dashboard skills on operational measurements: task success, failures, queue delay, latency, and freshness.","learn":["Carry a correlation ID and redact sensitive log fields.","Define service and task-level indicators with an agreed observation window.","Follow one failed request through a distributed trace or correlated logs."],"artifact":"An operations view with p50/p95 latency, error rate, queue delay, and cost per successful task.","gate":"A simulated failure can be traced to its cause; the dashboard distinguishes a healthy process from a successful user task.","requires":["docker","orchestration"],"resources":["otel","n8n"]},
-        {"id":"resilience","title":"Failure & recovery drills","label":"Prove reliability","familiar":false,"hours":6,"summary":"Practice the failures a demo usually hides.","bridge":"Turn your Redis and n8n debugging experience into a repeatable diagnostic method and a tested recovery procedure.","learn":["Use bounded retries, backoff, idempotency, and dead-letter states.","Inject a dependency outage, duplicate event, and malformed payload.","Measure recovery time and data loss against explicit learning objectives."],"artifact":"A failure matrix and recovery drill report with commands, expected state, and evidence.","gate":"Restore and replay are tested in the lab; observed recovery time and data loss are reported honestly, with no invented availability claim.","requires":["security","telemetry"],"resources":["docker","otel"]},
-        {"id":"release","title":"CI/CD & safe releases","label":"Project 02 gate","familiar":false,"hours":6,"summary":"Release a known version and know how to recover.","bridge":"Build on your GitHub Actions and protected-branch experience. Include API contracts and AI regressions in release decisions.","learn":["Run tests and a small eval suite before publishing an artifact.","Separate staging from production and record deployed versions.","Distinguish code rollback from restoring incompatible data migrations."],"artifact":"Project 02 release checklist, CI pipeline, deployment notes, and rollback/restore procedure.","gate":"A failed contract or access test blocks release; a known version can be redeployed and a data-restore limitation is documented.","requires":["resilience","evals"],"resources":["apitest","pages","evals"]}
+      "id": "operate",
+      "number": "04",
+      "title": "Make it dependable",
+      "short": "Deploy & operate",
+      "weeks": "13–16",
+      "accent": "orange",
+      "outcome": "Project 02: a deployable Support Copilot with telemetry, a recovery drill, and release checks.",
+      "topics": [
+        {
+          "id": "docker",
+          "title": "Reproducible containers",
+          "label": "Build on Docker",
+          "familiar": true,
+          "hours": 6,
+          "summary": "Make local success reproducible on a clean machine.",
+          "bridge": "Your Docker, Redis, PostgreSQL, and n8n troubleshooting gives you useful context. Practice with a small isolated lab stack.",
+          "learn": [
+            "Pin compatible versions, configure health checks, and separate config from secrets.",
+            "Understand networks, named volumes, and resource limits.",
+            "Verify backup and restore rather than only creating backup files."
+          ],
+          "artifact": "A minimal Compose stack for API, database, and copilot dependencies, with a restore drill.",
+          "gate": "A clean startup works; a recreated container preserves intended data; a backup restores into a separate test instance.",
+          "requires": [
+            "mcp"
+          ],
+          "resources": [
+            "docker",
+            "n8n"
+          ]
+        },
+        {
+          "id": "cloud",
+          "title": "One cloud, end to end",
+          "label": "Priority gap",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Deploy one service and understand the infrastructure it depends on.",
+          "bridge": "Azure is a reasonable learning default beside your Microsoft BI tools. Choose one cloud; do not learn three at once.",
+          "learn": [
+            "Map identity, compute, networking, storage, and managed database.",
+            "Configure TLS, environment separation, and a budget alert.",
+            "Compare a managed service with self-hosting using explicit tradeoffs."
+          ],
+          "artifact": "A deployment diagram and a small pilot environment, or a reproducible local simulation if a paid account is unavailable.",
+          "gate": "You can explain the request path, service identity, secret source, and shutdown procedure. Record any untested cloud assumptions.",
+          "requires": [
+            "docker",
+            "auth"
+          ],
+          "resources": [
+            "azure",
+            "docker"
+          ]
+        },
+        {
+          "id": "security",
+          "title": "Security & data boundaries",
+          "label": "Non-negotiable",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Treat data movement and tool permissions as design decisions.",
+          "bridge": "Extend your local-network and access-control work into application and AI threat modeling.",
+          "learn": [
+            "Map sensitive data, entry points, credentials, and tenant boundaries.",
+            "Apply least privilege, output validation, log redaction, and retention limits.",
+            "Test prompt injection and unauthorized access; document residual risks."
+          ],
+          "artifact": "A small threat model and abuse-case test report for Project 02.",
+          "gate": "No secret enters a client bundle or committed fixture; denied requests remain denied across API, retrieval, and tools.",
+          "requires": [
+            "tools",
+            "cloud"
+          ],
+          "resources": [
+            "owasp",
+            "mcp"
+          ]
+        },
+        {
+          "id": "telemetry",
+          "title": "Logs, metrics & traces",
+          "label": "See the system",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Explain what happened to one user request across the stack.",
+          "bridge": "Use your dashboard skills on operational measurements: task success, failures, queue delay, latency, and freshness.",
+          "learn": [
+            "Carry a correlation ID and redact sensitive log fields.",
+            "Define service and task-level indicators with an agreed observation window.",
+            "Follow one failed request through a distributed trace or correlated logs."
+          ],
+          "artifact": "An operations view with p50/p95 latency, error rate, queue delay, and cost per successful task.",
+          "gate": "A simulated failure can be traced to its cause; the dashboard distinguishes a healthy process from a successful user task.",
+          "requires": [
+            "docker",
+            "orchestration"
+          ],
+          "resources": [
+            "otel",
+            "n8n"
+          ]
+        },
+        {
+          "id": "resilience",
+          "title": "Failure & recovery drills",
+          "label": "Prove reliability",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Practice the failures a demo usually hides.",
+          "bridge": "Turn your Redis and n8n debugging experience into a repeatable diagnostic method and a tested recovery procedure.",
+          "learn": [
+            "Use bounded retries, backoff, idempotency, and dead-letter states.",
+            "Inject a dependency outage, duplicate event, and malformed payload.",
+            "Measure recovery time and data loss against explicit learning objectives."
+          ],
+          "artifact": "A failure matrix and recovery drill report with commands, expected state, and evidence.",
+          "gate": "Restore and replay are tested in the lab; observed recovery time and data loss are reported honestly, with no invented availability claim.",
+          "requires": [
+            "security",
+            "telemetry"
+          ],
+          "resources": [
+            "docker",
+            "otel"
+          ]
+        },
+        {
+          "id": "release",
+          "title": "CI/CD & safe releases",
+          "label": "Project 02 gate",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Release a known version and know how to recover.",
+          "bridge": "Build on your GitHub Actions and protected-branch experience. Include API contracts and AI regressions in release decisions.",
+          "learn": [
+            "Run tests and a small eval suite before publishing an artifact.",
+            "Separate staging from production and record deployed versions.",
+            "Distinguish code rollback from restoring incompatible data migrations."
+          ],
+          "artifact": "Project 02 release checklist, CI pipeline, deployment notes, and rollback/restore procedure.",
+          "gate": "A failed contract or access test blocks release; a known version can be redeployed and a data-restore limitation is documented.",
+          "requires": [
+            "resilience",
+            "evals"
+          ],
+          "resources": [
+            "apitest",
+            "pages",
+            "evals"
+          ]
+        }
       ],
-      "weekly":[
-        {"focus":"Reproduce the stack","tasks":["Containerize the minimal services with explicit versions.","Restore a backup into a separate lab instance."],"deliverable":"Compose setup + restore evidence"},
-        {"focus":"Deploy with boundaries","tasks":["Map one-cloud architecture and environment configuration.","Test access, prompt injection, secret handling, and log redaction."],"deliverable":"Deployment diagram + threat model"},
-        {"focus":"Observe and break it","tasks":["Instrument task success, latency, queue delay, and cost.","Run dependency-outage, duplicate-event, and recovery drills."],"deliverable":"Telemetry view + failure matrix"},
-        {"focus":"Release the support copilot","tasks":["Gate the release on tests and the versioned eval set.","Record a demo, known limitations, and rollback/restore instructions."],"deliverable":"Project 02 release + stage review"}
+      "weekly": [
+        {
+          "focus": "Reproduce the stack",
+          "tasks": [
+            "Containerize the minimal services with explicit versions.",
+            "Restore a backup into a separate lab instance."
+          ],
+          "deliverable": "Compose setup + restore evidence"
+        },
+        {
+          "focus": "Deploy with boundaries",
+          "tasks": [
+            "Map one-cloud architecture and environment configuration.",
+            "Test access, prompt injection, secret handling, and log redaction."
+          ],
+          "deliverable": "Deployment diagram + threat model"
+        },
+        {
+          "focus": "Observe and break it",
+          "tasks": [
+            "Instrument task success, latency, queue delay, and cost.",
+            "Run dependency-outage, duplicate-event, and recovery drills."
+          ],
+          "deliverable": "Telemetry view + failure matrix"
+        },
+        {
+          "focus": "Release the support copilot",
+          "tasks": [
+            "Gate the release on tests and the versioned eval set.",
+            "Record a demo, known limitations, and rollback/restore instructions."
+          ],
+          "deliverable": "Project 02 release + stage review"
+        }
       ]
     },
     {
-      "id":"deliver","number":"05","title":"Lead the customer pilot","short":"Customer delivery","weeks":"17–20","accent":"green","outcome":"A capstone pilot plan with agreed acceptance criteria, feedback evidence, and an operational handover.",
-      "topics":[
-        {"id":"scope","title":"Scope & stakeholder alignment","label":"Customer craft","familiar":false,"hours":6,"summary":"Turn a promising prototype into a bounded delivery commitment.","bridge":"Use your BI requirements experience, then add a stakeholder map and an explicit acceptance decision.","learn":["Run a discovery simulation with user, sponsor, and technical-owner perspectives.","Separate must-haves from requests and maintain an assumptions log.","Agree deliverables, exclusions, dependencies, and escalation paths."],"artifact":"A pilot brief and stakeholder map for a fictional Egyptian cosmetics distributor.","gate":"A reviewer can identify the pilot owner, a single target workflow, and what is excluded from this iteration.","requires":["release","discovery"],"resources":["role-anthropic","role-palantir"]},
-        {"id":"architecture","title":"Explain architecture tradeoffs","label":"Decision-making","familiar":false,"hours":6,"summary":"Make an engineering choice understandable to both users and engineers.","bridge":"Extend your lakehouse and galaxy diagrams into request flows, trust boundaries, and decision records.","learn":["Draw a system context and one end-to-end sequence.","Compare build/buy, workflow/agent, and managed/self-hosted options.","Write a decision record with consequences and a revisit trigger."],"artifact":"Two architecture diagrams and a one-page decision record for the capstone.","gate":"You can explain a rejected option and the condition under which it would become preferable.","requires":["scope","cloud"],"resources":["agents","azure"]},
-        {"id":"feedback","title":"Demos & feedback loops","label":"Customer craft","familiar":false,"hours":6,"summary":"Use a demo to learn whether the workflow is useful.","bridge":"Your dashboard storytelling translates well. Add a task-based usability session with structured notes.","learn":["Demo the user's before-and-after workflow in five minutes.","Ask a reviewer to complete a task without coaching.","Turn observed friction into a prioritized issue with a clear acceptance test."],"artifact":"A demo script, feedback log, and three prioritized changes.","gate":"Separate actual reviewer feedback from your own hypotheses; if no reviewer is available, label the exercise as a self-review.","requires":["scope","architecture"],"resources":["role-palantir"]},
-        {"id":"value","title":"Measure value & adoption","label":"Build on analytics","familiar":true,"hours":6,"summary":"Show what improved, for whom, and at what cost.","bridge":"This is where your KPI and Power BI background is an advantage. Add adoption and total operating cost to the story.","learn":["Compare task completion and handling time with a stated baseline.","Measure adoption, rework, failure rate, and cost per successful task.","Separate measured pilot results from estimated business value."],"artifact":"A pilot scorecard with a small sensitivity analysis and assumptions.","gate":"Benefits are reproducible from evidence; projected EGP savings are labeled estimates and include labor and API/cloud assumptions.","requires":["feedback","baseline","telemetry"],"resources":["evals","otel"]},
-        {"id":"handover","title":"Enablement & handover","label":"Ownership transfer","familiar":false,"hours":6,"summary":"Leave behind a system someone else can operate.","bridge":"Turn your technical walkthroughs into a short operator guide and a clear ownership agreement.","learn":["Write a user quickstart, operator runbook, and troubleshooting decision tree.","Document credentials ownership, escalation, backup, and change procedures.","Train a reviewer through one routine task and one failure case."],"artifact":"A handover pack and a teach-back checklist.","gate":"A reviewer can follow the runbook without undocumented help; any simulated training is labeled as such.","requires":["value","resilience"],"resources":["docker","otel"]},
-        {"id":"incident","title":"Incident communication","label":"Own the outcome","familiar":false,"hours":6,"summary":"Communicate clearly when a customer's workflow breaks.","bridge":"Build on your evidence-first troubleshooting: state impact, current facts, next action, and the next update time.","learn":["Triage an incident with impact, severity, and containment.","Write a plain-language status update and a technical timeline.","Produce a blameless root-cause analysis with corrective actions."],"artifact":"A simulated incident update and postmortem for a queue or retrieval failure.","gate":"The update distinguishes known facts from hypotheses; every corrective action has an owner and a verification step.","requires":["handover","telemetry"],"resources":["otel","n8n"]}
+      "id": "deliver",
+      "number": "05",
+      "title": "Lead the customer pilot",
+      "short": "Customer delivery",
+      "weeks": "17–20",
+      "accent": "green",
+      "outcome": "A capstone pilot plan with agreed acceptance criteria, feedback evidence, and an operational handover.",
+      "topics": [
+        {
+          "id": "scope",
+          "title": "Scope & stakeholder alignment",
+          "label": "Customer craft",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Turn a promising prototype into a bounded delivery commitment.",
+          "bridge": "Use your BI requirements experience, then add a stakeholder map and an explicit acceptance decision.",
+          "learn": [
+            "Run a discovery simulation with user, sponsor, and technical-owner perspectives.",
+            "Separate must-haves from requests and maintain an assumptions log.",
+            "Agree deliverables, exclusions, dependencies, and escalation paths."
+          ],
+          "artifact": "A pilot brief and stakeholder map for a fictional Egyptian cosmetics distributor.",
+          "gate": "A reviewer can identify the pilot owner, a single target workflow, and what is excluded from this iteration.",
+          "requires": [
+            "release",
+            "discovery"
+          ],
+          "resources": [
+            "role-anthropic",
+            "role-palantir"
+          ]
+        },
+        {
+          "id": "architecture",
+          "title": "Explain architecture tradeoffs",
+          "label": "Decision-making",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Make an engineering choice understandable to both users and engineers.",
+          "bridge": "Extend your lakehouse and galaxy diagrams into request flows, trust boundaries, and decision records.",
+          "learn": [
+            "Draw a system context and one end-to-end sequence.",
+            "Compare build/buy, workflow/agent, and managed/self-hosted options.",
+            "Write a decision record with consequences and a revisit trigger."
+          ],
+          "artifact": "Two architecture diagrams and a one-page decision record for the capstone.",
+          "gate": "You can explain a rejected option and the condition under which it would become preferable.",
+          "requires": [
+            "scope",
+            "cloud"
+          ],
+          "resources": [
+            "agents",
+            "azure"
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Demos & feedback loops",
+          "label": "Customer craft",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Use a demo to learn whether the workflow is useful.",
+          "bridge": "Your dashboard storytelling translates well. Add a task-based usability session with structured notes.",
+          "learn": [
+            "Demo the user's before-and-after workflow in five minutes.",
+            "Ask a reviewer to complete a task without coaching.",
+            "Turn observed friction into a prioritized issue with a clear acceptance test."
+          ],
+          "artifact": "A demo script, feedback log, and three prioritized changes.",
+          "gate": "Separate actual reviewer feedback from your own hypotheses; if no reviewer is available, label the exercise as a self-review.",
+          "requires": [
+            "scope",
+            "architecture"
+          ],
+          "resources": [
+            "role-palantir"
+          ]
+        },
+        {
+          "id": "value",
+          "title": "Measure value & adoption",
+          "label": "Build on analytics",
+          "familiar": true,
+          "hours": 6,
+          "summary": "Show what improved, for whom, and at what cost.",
+          "bridge": "This is where your KPI and Power BI background is an advantage. Add adoption and total operating cost to the story.",
+          "learn": [
+            "Compare task completion and handling time with a stated baseline.",
+            "Measure adoption, rework, failure rate, and cost per successful task.",
+            "Separate measured pilot results from estimated business value."
+          ],
+          "artifact": "A pilot scorecard with a small sensitivity analysis and assumptions.",
+          "gate": "Benefits are reproducible from evidence; projected EGP savings are labeled estimates and include labor and API/cloud assumptions.",
+          "requires": [
+            "feedback",
+            "baseline",
+            "telemetry"
+          ],
+          "resources": [
+            "evals",
+            "otel"
+          ]
+        },
+        {
+          "id": "handover",
+          "title": "Enablement & handover",
+          "label": "Ownership transfer",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Leave behind a system someone else can operate.",
+          "bridge": "Turn your technical walkthroughs into a short operator guide and a clear ownership agreement.",
+          "learn": [
+            "Write a user quickstart, operator runbook, and troubleshooting decision tree.",
+            "Document credentials ownership, escalation, backup, and change procedures.",
+            "Train a reviewer through one routine task and one failure case."
+          ],
+          "artifact": "A handover pack and a teach-back checklist.",
+          "gate": "A reviewer can follow the runbook without undocumented help; any simulated training is labeled as such.",
+          "requires": [
+            "value",
+            "resilience"
+          ],
+          "resources": [
+            "docker",
+            "otel"
+          ]
+        },
+        {
+          "id": "incident",
+          "title": "Incident communication",
+          "label": "Own the outcome",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Communicate clearly when a customer's workflow breaks.",
+          "bridge": "Build on your evidence-first troubleshooting: state impact, current facts, next action, and the next update time.",
+          "learn": [
+            "Triage an incident with impact, severity, and containment.",
+            "Write a plain-language status update and a technical timeline.",
+            "Produce a blameless root-cause analysis with corrective actions."
+          ],
+          "artifact": "A simulated incident update and postmortem for a queue or retrieval failure.",
+          "gate": "The update distinguishes known facts from hypotheses; every corrective action has an owner and a verification step.",
+          "requires": [
+            "handover",
+            "telemetry"
+          ],
+          "resources": [
+            "otel",
+            "n8n"
+          ]
+        }
       ],
-      "weekly":[
-        {"focus":"Scope a customer pilot","tasks":["Draft the Egyptian SME pilot brief and stakeholder map.","Agree acceptance criteria and exclusions in a discovery simulation."],"deliverable":"Pilot scope + acceptance rubric"},
-        {"focus":"Make tradeoffs visible","tasks":["Draw architecture and write one decision record.","Create a before/after demo and collect task-based feedback."],"deliverable":"Architecture pack + feedback log"},
-        {"focus":"Measure and teach","tasks":["Build a baseline/value/adoption scorecard.","Write a user guide and operator handover runbook."],"deliverable":"Pilot scorecard + enablement pack"},
-        {"focus":"Practice ownership under pressure","tasks":["Run a handover teach-back or labeled self-review.","Simulate an incident and write an update and postmortem."],"deliverable":"Handover evidence + incident review"}
+      "weekly": [
+        {
+          "focus": "Scope a customer pilot",
+          "tasks": [
+            "Draft the Egyptian SME pilot brief and stakeholder map.",
+            "Agree acceptance criteria and exclusions in a discovery simulation."
+          ],
+          "deliverable": "Pilot scope + acceptance rubric"
+        },
+        {
+          "focus": "Make tradeoffs visible",
+          "tasks": [
+            "Draw architecture and write one decision record.",
+            "Create a before/after demo and collect task-based feedback."
+          ],
+          "deliverable": "Architecture pack + feedback log"
+        },
+        {
+          "focus": "Measure and teach",
+          "tasks": [
+            "Build a baseline/value/adoption scorecard.",
+            "Write a user guide and operator handover runbook."
+          ],
+          "deliverable": "Pilot scorecard + enablement pack"
+        },
+        {
+          "focus": "Practice ownership under pressure",
+          "tasks": [
+            "Run a handover teach-back or labeled self-review.",
+            "Simulate an incident and write an update and postmortem."
+          ],
+          "deliverable": "Handover evidence + incident review"
+        }
       ]
     },
     {
-      "id":"prove","number":"06","title":"Prove the whole journey","short":"Capstone & career","weeks":"21–24","accent":"blue","outcome":"Project 03: a portfolio pilot demonstrating discovery, implementation, measurement, and handover.",
-      "topics":[
-        {"id":"capstone-scope","title":"Freeze the capstone slice","label":"Project 03","familiar":false,"hours":6,"summary":"Choose a small workflow and make its acceptance tests explicit.","bridge":"Use an Egyptian SME operations scenario to connect SQL, BI, API development, and n8n without starting a sprawling new platform.","learn":["Choose stock exceptions or order reconciliation for a fictional distributor.","Use labeled synthetic order/inventory fixtures with documented EGP assumptions.","Define success, access, correctness, performance, and recovery checks."],"artifact":"A final implementation plan, data contract, test fixtures, and acceptance checklist.","gate":"One user, one workflow, one measurable outcome, and a documented data provenance story fit in a two-minute explanation.","requires":["incident","architecture"],"resources":["postgres","apitest"]},
-        {"id":"capstone-build","title":"Build the pilot system","label":"Integrate your stack","familiar":false,"hours":6,"summary":"Connect the smallest system that completes the workflow.","bridge":"Reuse components and lessons from Projects 01 and 02. AI is optional unless it improves the chosen task.","learn":["Connect React, FastAPI, PostgreSQL, and an n8n integration.","Preserve permission boundaries and audit operational actions.","Keep any assistant read-only or approval-gated and show its evidence."],"artifact":"A working exception-to-resolution flow with a reproducible fixture and audit trail.","gate":"The user completes the workflow from the UI; the backend validates actions, records outcomes, and handles a retry safely.","requires":["capstone-scope","slice","release"],"resources":["fastapi","react","n8n"]},
-        {"id":"acceptance","title":"Validate with a user lens","label":"Acceptance gate","familiar":false,"hours":6,"summary":"Check usability, correctness, and failure behavior against the agreed scope.","bridge":"Use the same measurement discipline you apply to a BI model. Make failed checks visible rather than hiding them in the demo.","learn":["Run happy-path, access, empty-data, duplicate-event, and dependency-failure scenarios.","Use a reviewer or explicitly labeled self-review.","If AI is present, run the fixed eval set and record remaining failures."],"artifact":"An acceptance report with evidence, open issues, and the release recommendation.","gate":"Every agreed criterion is passed or explicitly deferred with impact; no access-control failure is waved through.","requires":["capstone-build"],"resources":["apitest","evals","owasp"]},
-        {"id":"rollout","title":"Plan rollout & ownership","label":"Operational gate","familiar":false,"hours":6,"summary":"Show how a pilot becomes a maintained workflow.","bridge":"Combine your Docker runbooks, CI habits, and handover practice into one deployment story.","learn":["Define a staged rollout, monitoring checks, and a stop condition.","Run a backup/restore or rollback drill in the lab.","Assign operational ownership and document ongoing cost assumptions."],"artifact":"A pilot release pack with deployment, recovery, monitoring, and handover instructions.","gate":"A reviewer can start the lab, run the workflow, identify a failure, and recover using the documented procedure.","requires":["acceptance","handover"],"resources":["docker","otel"]},
-        {"id":"case-study","title":"Publish the case study","label":"Portfolio evidence","familiar":false,"hours":6,"summary":"Tell the engineering story with evidence and honest limits.","bridge":"Link your existing portfolio, PixelFed, and n8n repos to a complete customer-outcome narrative.","learn":["Explain problem, discovery, architecture, tradeoffs, delivery, and results.","Include screenshots, diagrams, a five-minute demo, and reproduction steps.","Label fictional customers, synthetic data, simulations, and unmeasured projections."],"artifact":"A case study, architecture diagrams, demo video, and public sanitized repository.","gate":"A hiring reviewer can see your own contribution, run the demo, and distinguish measured outcomes from learning targets.","requires":["rollout","value"],"resources":["role-anthropic","role-palantir"]},
-        {"id":"interview","title":"FDE interview & role fit","label":"Next chapter","familiar":false,"hours":6,"summary":"Practice ambiguous problems, code, and customer conversations.","bridge":"Position yourself around data and AI integration delivery. Remote Solutions Engineer, Implementation Engineer, and AI Integration Engineer roles may also fit your constraint set.","learn":["Practice Python/SQL coding, practical data structures, and API debugging.","Run a 45-minute discovery-to-design case and explain tradeoffs aloud.","Screen each job for country eligibility, remote policy, travel, seniority, and customer duties."],"artifact":"Three mock cases, a concise project narrative, and a role-fit checklist.","gate":"You can scope an ambiguous customer problem, implement a small integration, explain failure recovery, and discuss a real tradeoff. This plan builds evidence; it does not guarantee role readiness or a job.","requires":["case-study"],"resources":["role-anthropic","role-palantir"]}
+      "id": "prove",
+      "number": "06",
+      "title": "Prove the whole journey",
+      "short": "Capstone & career",
+      "weeks": "21–24",
+      "accent": "blue",
+      "outcome": "Project 03: a portfolio pilot demonstrating discovery, implementation, measurement, and handover.",
+      "topics": [
+        {
+          "id": "capstone-scope",
+          "title": "Freeze the capstone slice",
+          "label": "Project 03",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Choose a small workflow and make its acceptance tests explicit.",
+          "bridge": "Use an Egyptian SME operations scenario to connect SQL, BI, API development, and n8n without starting a sprawling new platform.",
+          "learn": [
+            "Choose stock exceptions or order reconciliation for a fictional distributor.",
+            "Use labeled synthetic order/inventory fixtures with documented EGP assumptions.",
+            "Define success, access, correctness, performance, and recovery checks."
+          ],
+          "artifact": "A final implementation plan, data contract, test fixtures, and acceptance checklist.",
+          "gate": "One user, one workflow, one measurable outcome, and a documented data provenance story fit in a two-minute explanation.",
+          "requires": [
+            "incident",
+            "architecture"
+          ],
+          "resources": [
+            "postgres",
+            "apitest"
+          ]
+        },
+        {
+          "id": "capstone-build",
+          "title": "Build the pilot system",
+          "label": "Integrate your stack",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Connect the smallest system that completes the workflow.",
+          "bridge": "Reuse components and lessons from Projects 01 and 02. AI is optional unless it improves the chosen task.",
+          "learn": [
+            "Connect React, FastAPI, PostgreSQL, and an n8n integration.",
+            "Preserve permission boundaries and audit operational actions.",
+            "Keep any assistant read-only or approval-gated and show its evidence."
+          ],
+          "artifact": "A working exception-to-resolution flow with a reproducible fixture and audit trail.",
+          "gate": "The user completes the workflow from the UI; the backend validates actions, records outcomes, and handles a retry safely.",
+          "requires": [
+            "capstone-scope",
+            "slice",
+            "release"
+          ],
+          "resources": [
+            "fastapi",
+            "react",
+            "n8n"
+          ]
+        },
+        {
+          "id": "acceptance",
+          "title": "Validate with a user lens",
+          "label": "Acceptance gate",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Check usability, correctness, and failure behavior against the agreed scope.",
+          "bridge": "Use the same measurement discipline you apply to a BI model. Make failed checks visible rather than hiding them in the demo.",
+          "learn": [
+            "Run happy-path, access, empty-data, duplicate-event, and dependency-failure scenarios.",
+            "Use a reviewer or explicitly labeled self-review.",
+            "If AI is present, run the fixed eval set and record remaining failures."
+          ],
+          "artifact": "An acceptance report with evidence, open issues, and the release recommendation.",
+          "gate": "Every agreed criterion is passed or explicitly deferred with impact; no access-control failure is waved through.",
+          "requires": [
+            "capstone-build"
+          ],
+          "resources": [
+            "apitest",
+            "evals",
+            "owasp"
+          ]
+        },
+        {
+          "id": "rollout",
+          "title": "Plan rollout & ownership",
+          "label": "Operational gate",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Show how a pilot becomes a maintained workflow.",
+          "bridge": "Combine your Docker runbooks, CI habits, and handover practice into one deployment story.",
+          "learn": [
+            "Define a staged rollout, monitoring checks, and a stop condition.",
+            "Run a backup/restore or rollback drill in the lab.",
+            "Assign operational ownership and document ongoing cost assumptions."
+          ],
+          "artifact": "A pilot release pack with deployment, recovery, monitoring, and handover instructions.",
+          "gate": "A reviewer can start the lab, run the workflow, identify a failure, and recover using the documented procedure.",
+          "requires": [
+            "acceptance",
+            "handover"
+          ],
+          "resources": [
+            "docker",
+            "otel"
+          ]
+        },
+        {
+          "id": "case-study",
+          "title": "Publish the case study",
+          "label": "Portfolio evidence",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Tell the engineering story with evidence and honest limits.",
+          "bridge": "Link your existing portfolio, PixelFed, and n8n repos to a complete customer-outcome narrative.",
+          "learn": [
+            "Explain problem, discovery, architecture, tradeoffs, delivery, and results.",
+            "Include screenshots, diagrams, a five-minute demo, and reproduction steps.",
+            "Label fictional customers, synthetic data, simulations, and unmeasured projections."
+          ],
+          "artifact": "A case study, architecture diagrams, demo video, and public sanitized repository.",
+          "gate": "A hiring reviewer can see your own contribution, run the demo, and distinguish measured outcomes from learning targets.",
+          "requires": [
+            "rollout",
+            "value"
+          ],
+          "resources": [
+            "role-anthropic",
+            "role-palantir"
+          ]
+        },
+        {
+          "id": "interview",
+          "title": "FDE interview & role fit",
+          "label": "Next chapter",
+          "familiar": false,
+          "hours": 6,
+          "summary": "Practice ambiguous problems, code, and customer conversations.",
+          "bridge": "Position yourself around data and AI integration delivery. Remote Solutions Engineer, Implementation Engineer, and AI Integration Engineer roles may also fit your constraint set.",
+          "learn": [
+            "Practice Python/SQL coding, practical data structures, and API debugging.",
+            "Run a 45-minute discovery-to-design case and explain tradeoffs aloud.",
+            "Screen each job for country eligibility, remote policy, travel, seniority, and customer duties."
+          ],
+          "artifact": "Three mock cases, a concise project narrative, and a role-fit checklist.",
+          "gate": "You can scope an ambiguous customer problem, implement a small integration, explain failure recovery, and discuss a real tradeoff. This plan builds evidence; it does not guarantee role readiness or a job.",
+          "requires": [
+            "case-study"
+          ],
+          "resources": [
+            "role-anthropic",
+            "role-palantir"
+          ]
+        }
       ],
-      "weekly":[
-        {"focus":"Build one narrow pilot","tasks":["Freeze the scope, fixtures, and acceptance checklist.","Reuse existing components to connect the first full workflow."],"deliverable":"Capstone implementation slice"},
-        {"focus":"Finish and validate the journey","tasks":["Complete UI, API, database, and workflow integration.","Run user-task, permission, and failure acceptance scenarios."],"deliverable":"Working pilot + acceptance report"},
-        {"focus":"Rehearse the release and handover","tasks":["Run deployment/recovery and monitoring checks.","Publish the case study, diagrams, and a five-minute demo."],"deliverable":"Project 03 release + portfolio case study"},
-        {"focus":"Practice the FDE conversation","tasks":["Run three discovery, coding/debugging, and system-design mock cases.","Use the role-fit checklist to target eligible remote opportunities."],"deliverable":"Interview pack + evidence review"}
+      "weekly": [
+        {
+          "focus": "Build one narrow pilot",
+          "tasks": [
+            "Freeze the scope, fixtures, and acceptance checklist.",
+            "Reuse existing components to connect the first full workflow."
+          ],
+          "deliverable": "Capstone implementation slice"
+        },
+        {
+          "focus": "Finish and validate the journey",
+          "tasks": [
+            "Complete UI, API, database, and workflow integration.",
+            "Run user-task, permission, and failure acceptance scenarios."
+          ],
+          "deliverable": "Working pilot + acceptance report"
+        },
+        {
+          "focus": "Rehearse the release and handover",
+          "tasks": [
+            "Run deployment/recovery and monitoring checks.",
+            "Publish the case study, diagrams, and a five-minute demo."
+          ],
+          "deliverable": "Project 03 release + portfolio case study"
+        },
+        {
+          "focus": "Practice the FDE conversation",
+          "tasks": [
+            "Run three discovery, coding/debugging, and system-design mock cases.",
+            "Use the role-fit checklist to target eligible remote opportunities."
+          ],
+          "deliverable": "Interview pack + evidence review"
+        }
       ]
     }
   ],
-  "projects":[
-    {"number":"01","id":"console","title":"PixelFed Operations Console","subtitle":"Turn analytics into an application","weeks":"01–08","stack":["Python","FastAPI","PostgreSQL","React","TypeScript"],"problem":"A fictional community operations team needs to investigate creator activity and stale metrics without moving between raw tables and reports.","reuse":"Extend your existing PixelFed data contracts and gold-level analytics. All records remain synthetic; this is a learning build, not a real customer engagement.","repo":"https://github.com/Sohila-Khaled-Abbas/pixelfed-analytics-engineering","deliverables":["A discovery brief and metric/freshness contract","A read-only metrics API plus a small operational issue table","An accessible console with filters, detail views, and explicit error states","A tested permissions matrix and a short user-task demo"],"success":"A reviewer can investigate one activity anomaly from the UI, trace its source, and explain data freshness. Unauthorized access tests pass.","diagram":"console"},
-    {"number":"02","id":"copilot","title":"Workflow Support Copilot","subtitle":"Add intelligence you can inspect","weeks":"09–16","stack":["n8n","Qdrant","Python","MCP","Docker","OpenTelemetry"],"problem":"A fictional automation operator needs to find the right runbook, inspect a failed execution, and decide what action is safe.","reuse":"Use sanitized runbooks and a lab copy of your n8n stack. Credentials and production execution data do not enter the public demo.","repo":"https://github.com/Sohila-Khaled-Abbas/n8n-production-queue-setup","deliverables":["A cited English/Arabic runbook assistant with permission-aware retrieval","A versioned 30-case learning eval set and a keyword baseline","Read-only execution tools plus a mock human-approved retry","A deployment, telemetry, and recovery drill report"],"success":"Suggested learning target: at least 80% rubric pass on the fixed learning set, zero access leaks, and no duplicate simulated action. Report actual latency/cost; real pilot targets require agreement.","diagram":"copilot"},
-    {"number":"03","id":"pilot","title":"Egypt SME Operations Pilot","subtitle":"Own discovery through handover","weeks":"17–24","stack":["SQL","FastAPI","React","n8n","Power BI"],"problem":"A fictional Egyptian cosmetics distributor reconciles stock/order exceptions manually and needs a visible resolution workflow.","reuse":"Combine your cosmetics-domain interest, BI scorecards, and the API/automation components built earlier. Use a separate synthetic commerce schema; PixelFed is not a sales dataset.","repo":null,"deliverables":["A stakeholder map, pilot scope, and explicit acceptance criteria","Synthetic orders/inventory fixtures with documented EGP and timing assumptions","An exception-to-resolution application with audit trail and replay-safe actions","A measured lab scorecard, case study, demo, operator runbook, and handover"],"success":"A reviewer completes the target workflow and a recovery drill using only the documentation. Show baseline versus observed lab results; label savings projections and fictional customer details.","diagram":"pilot"}
+  "projects": [
+    {
+      "number": "01",
+      "id": "console",
+      "title": "PixelFed Operations Console",
+      "subtitle": "Turn analytics into an application",
+      "weeks": "01–08",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "React",
+        "TypeScript"
+      ],
+      "problem": "A fictional community operations team needs to investigate creator activity and stale metrics without moving between raw tables and reports.",
+      "reuse": "Extend your existing PixelFed data contracts and gold-level analytics. All records remain synthetic; this is a learning build, not a real customer engagement.",
+      "repo": "https://github.com/Sohila-Khaled-Abbas/pixelfed-analytics-engineering",
+      "deliverables": [
+        "A discovery brief and metric/freshness contract",
+        "A read-only metrics API plus a small operational issue table",
+        "An accessible console with filters, detail views, and explicit error states",
+        "A tested permissions matrix and a short user-task demo"
+      ],
+      "success": "A reviewer can investigate one activity anomaly from the UI, trace its source, and explain data freshness. Unauthorized access tests pass.",
+      "diagram": "console"
+    },
+    {
+      "number": "02",
+      "id": "copilot",
+      "title": "Workflow Support Copilot",
+      "subtitle": "Add intelligence you can inspect",
+      "weeks": "09–16",
+      "stack": [
+        "n8n",
+        "Qdrant",
+        "Python",
+        "MCP",
+        "Docker",
+        "OpenTelemetry"
+      ],
+      "problem": "A fictional automation operator needs to find the right runbook, inspect a failed execution, and decide what action is safe.",
+      "reuse": "Use sanitized runbooks and a lab copy of your n8n stack. Credentials and production execution data do not enter the public demo.",
+      "repo": "https://github.com/Sohila-Khaled-Abbas/n8n-production-queue-setup",
+      "deliverables": [
+        "A cited English/Arabic runbook assistant with permission-aware retrieval",
+        "A versioned 30-case learning eval set and a keyword baseline",
+        "Read-only execution tools plus a mock human-approved retry",
+        "A deployment, telemetry, and recovery drill report"
+      ],
+      "success": "Suggested learning target: at least 80% rubric pass on the fixed learning set, zero access leaks, and no duplicate simulated action. Report actual latency/cost; real pilot targets require agreement.",
+      "diagram": "copilot"
+    },
+    {
+      "number": "03",
+      "id": "pilot",
+      "title": "Egypt SME Operations Pilot",
+      "subtitle": "Own discovery through handover",
+      "weeks": "17–24",
+      "stack": [
+        "SQL",
+        "FastAPI",
+        "React",
+        "n8n",
+        "Power BI"
+      ],
+      "problem": "A fictional Egyptian cosmetics distributor reconciles stock/order exceptions manually and needs a visible resolution workflow.",
+      "reuse": "Combine your cosmetics-domain interest, BI scorecards, and the API/automation components built earlier. Use a separate synthetic commerce schema; PixelFed is not a sales dataset.",
+      "repo": null,
+      "deliverables": [
+        "A stakeholder map, pilot scope, and explicit acceptance criteria",
+        "Synthetic orders/inventory fixtures with documented EGP and timing assumptions",
+        "An exception-to-resolution application with audit trail and replay-safe actions",
+        "A measured lab scorecard, case study, demo, operator runbook, and handover"
+      ],
+      "success": "A reviewer completes the target workflow and a recovery drill using only the documentation. Show baseline versus observed lab results; label savings projections and fictional customer details.",
+      "diagram": "pilot"
+    }
   ],
-  "startingPoints":[
-    {"title":"Data & BI","skills":"SQL · Python · Power BI · DAX · Power Query","use":"Bring a business question down to data grain, quality, and a clear success metric."},
-    {"title":"Automation & AI","skills":"n8n · APIs · PostgreSQL · Redis · Qdrant","use":"Connect systems and model workflow states; add stronger contracts, evaluations, and access boundaries."},
-    {"title":"Engineering foundations","skills":"GitHub Actions · Docker · networking & OS labs","use":"Build reproducible services and explain their operational behavior. Validate depth through the exit checks."}
+  "startingPoints": [
+    {
+      "title": "Data & BI",
+      "skills": "SQL · Python · Power BI · DAX · Power Query",
+      "use": "Bring a business question down to data grain, quality, and a clear success metric."
+    },
+    {
+      "title": "Automation & AI",
+      "skills": "n8n · APIs · PostgreSQL · Redis · Qdrant",
+      "use": "Connect systems and model workflow states; add stronger contracts, evaluations, and access boundaries."
+    },
+    {
+      "title": "Engineering foundations",
+      "skills": "GitHub Actions · Docker · networking & OS labs",
+      "use": "Build reproducible services and explain their operational behavior. Validate depth through the exit checks."
+    }
   ],
-  "principles":[
-    {"title":"Use what you already know","text":"Keep Python, SQL, Power BI, n8n, and PostgreSQL. Add FastAPI and enough React/TypeScript for a useful interface. Choose one cloud."},
-    {"title":"Earn progress with evidence","text":"Every topic starts at zero. Existing exposure is marked as a starting advantage; mark a topic complete when you can meet its exit check."},
-    {"title":"Make room for customer work","text":"Practice discovery, demos, tradeoffs, documentation, and handover every week. A working model is only one component of delivery."},
-    {"title":"Build for your constraints","text":"Plan for 9 hours a week: roughly 2 learning, 5 building, 1 validation, and 1 communication. Use small fixtures and one lab stack; stretch the timeline when needed."}
+  "principles": [
+    {
+      "title": "Use what you already know",
+      "text": "Keep Python, SQL, Power BI, n8n, and PostgreSQL. Add FastAPI and enough React/TypeScript for a useful interface. Choose one cloud."
+    },
+    {
+      "title": "Earn progress with evidence",
+      "text": "Every topic starts at zero. Existing exposure is marked as a starting advantage; mark a topic complete when you can meet its exit check."
+    },
+    {
+      "title": "Make room for customer work",
+      "text": "Practice discovery, demos, tradeoffs, documentation, and handover every week. A working model is only one component of delivery."
+    },
+    {
+      "title": "Build for your constraints",
+      "text": "Plan for 9 hours a week: roughly 2 learning, 5 building, 1 validation, and 1 communication. Use small fixtures and one lab stack; stretch the timeline when needed."
+    }
   ]
 }

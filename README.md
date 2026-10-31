@@ -22,6 +22,10 @@ A personal learning path for **Sohila Khaled Abbas**, built around Python, SQL, 
 > [!NOTE]
 > **The direction:** data and AI integration delivery. Keep your existing strengths and add the engineering, discovery, and operational skills needed to own a customer workflow.
 
+## A focused Python branch
+
+[**Python Learning Roadmap**](https://sohila-khaled-abbas.github.io/python-learning-roadmap/) connects Boot.dev’s twelve chapters, ITI Arabic and Harvard CS50P with original exercises, pandas/SQL practice and three data project briefs. Use it to strengthen the Python service-skill node, then return to this customer-delivery path. [Python source repository](https://github.com/Sohila-Khaled-Abbas/python-learning-roadmap).
+
 ## The learning path
 
 | Stage | Weeks | What you demonstrate |
@@ -127,3 +131,4 @@ The timeline is a learning plan, not a hiring guarantee. Defer heavy model train
 Inspired by the connected-roadmap interaction of [roadmap.sh](https://roadmap.sh/forward-deployed-engineer). The design and personalized curriculum are original. This project is independent and is not affiliated with roadmap.sh or the referenced employers.
 
 MIT licensed code and original curriculum. External resources retain their respective rights.
+
